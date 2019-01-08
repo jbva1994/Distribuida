@@ -3,30 +3,14 @@
 eureka:
   client:
     serviceUrl:      
-      defaultZone: http://eureka:password@localhost:8010/eureka/,http://localhost:8011/eureka/,http://localhost:8012/eureka/,http://localhost:8013/eureka/
+      defaultZone: http://eureka:password@localhost:8010/eureka/,http://localhost:8011/eureka/,http://localhost:8012/eureka/
 
 ---
 spring:
-  profiles: subject
-words: I,You,He,She,It
+  profiles: persona
+words: Jose, Carlos
   
 ---
 spring:
-  profiles: verb
-words: ran,knew,had,saw,bought
-
----
-spring:
-  profiles: article
-words: a,the
-
----
-spring:
-  profiles: adjective
-words: reasonable,leaky,suspicious,ordinary,unlikely
-
----
-spring:
-  profiles: noun
-words: boat,book,vote,seat,backpack,partition,groundhog
-  
+  profiles: direccion
+words: Panecillo, Calzado
